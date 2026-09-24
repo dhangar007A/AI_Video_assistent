@@ -1,0 +1,18 @@
+.home-page__history {
+  padding-bottom: 80px;
+}
+
+.home-page__error {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background: rgba(184, 84, 84, 0.12);
+  border: 1px solid rgba(184, 84, 84, 0.2);
+  border-radius: var(--radius-md);
+  color: var(--accent-danger);
+  font-size: 0.9rem;
+  z-index: 300;
+  backdrop-filter: blur(20px);
+}

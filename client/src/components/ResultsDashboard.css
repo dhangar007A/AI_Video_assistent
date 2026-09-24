@@ -1,0 +1,54 @@
+.dashboard {
+  padding: calc(var(--navbar-height) + 32px) 24px 80px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.dashboard__header {
+  margin-bottom: 32px;
+}
+
+.dashboard__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.dashboard__meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dashboard__date {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* ── Bento Grid ────────────────────────────────────────────────────────────── */
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.dashboard__col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: calc(var(--navbar-height) + 16px) 16px 100px;
+  }
+}

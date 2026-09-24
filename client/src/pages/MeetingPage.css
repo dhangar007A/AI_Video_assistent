@@ -1,0 +1,31 @@
+.meeting-page__back {
+  padding-top: calc(var(--navbar-height) + 16px);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--duration-fast) var(--ease-out);
+  text-decoration: none;
+}
+.back-link:hover {
+  color: var(--text-primary);
+  background: var(--glass-bg-hover);
+}
+
+.meeting-page__loading,
+.meeting-page__error {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--text-muted);
+}

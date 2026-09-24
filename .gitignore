@@ -1,0 +1,43 @@
+.env
+.venv/
+
+__pycache__/
+*.py[cod]
+
+downloades/
+downloads/
+
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+.DS_Store
+Thumbs.db
+
+INTERVIEW_PREP
+
+# Node dependencies
+node_modules/
+**/node_modules/
+client/dist/
+client/node_modules/
+server/node_modules/
+
+# Local database and uploads
+vector_db/
+vector_db_*/
+server/uploads/
+
+# Java & Maven
+target/
+**/target/
+server-springboot/uploads/
+*.class
+
+# Secret files
+.env
+.env.local
+server/.env

@@ -1,0 +1,64 @@
+/* ── Shared Insight Card Styles ─────────────────────────────────────────────── */
+.insight-card {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.insight-card__accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, #3d5a80, #5a7fad);
+  border-radius: 3px 0 0 3px;
+}
+.insight-card__accent--green {
+  background: linear-gradient(180deg, #4a9a6e, #5aad7e);
+}
+.insight-card__accent--amber {
+  background: linear-gradient(180deg, #c4935a, #a07a4a);
+}
+.insight-card__accent--rose {
+  background: linear-gradient(180deg, #9a6b7d, #7a5a6d);
+}
+
+.insight-card__content {
+  padding: 24px 24px 24px 28px;
+}
+
+.insight-card__text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.insight-card__text p { margin: 0.4em 0; }
+.insight-card__text ol, .insight-card__text ul {
+  padding-left: 1.3em;
+}
+.insight-card__text li {
+  margin: 0.5em 0;
+  color: var(--text-secondary);
+}
+.insight-card__text li strong {
+  color: var(--text-primary);
+}
+
+/* Hover glow per card type — very subtle */
+.insight-card--summary:hover {
+  box-shadow: 0 0 25px rgba(59, 89, 152, 0.06);
+}
+.insight-card--actions:hover {
+  box-shadow: 0 0 25px rgba(74, 154, 110, 0.06);
+}
+.insight-card--decisions:hover {
+  box-shadow: 0 0 25px rgba(196, 147, 90, 0.06);
+}
+.insight-card--questions:hover {
+  box-shadow: 0 0 25px rgba(154, 107, 125, 0.06);
+}
